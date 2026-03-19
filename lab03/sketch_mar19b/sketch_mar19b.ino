@@ -20,14 +20,14 @@ void loop() {
   for(int dutyCycle = 0; dutyCycle <= 255; dutyCycle++){   
     ledcWrite(ledPin, dutyCycle);               // 板载灯：0→255（越来越亮）
     ledcWrite(extLedPin, 255 - dutyCycle);     // 外接红灯：255→0（越来越暗）
-    delay(10);
+    delay(5);
   }
 
   // 第二阶段：板载灯变弱 → 外接红灯变亮
   for(int dutyCycle = 255; dutyCycle >= 0; dutyCycle--){
     ledcWrite(ledPin, dutyCycle);               // 板载灯：255→0（越来越暗）
     ledcWrite(extLedPin, 255 - dutyCycle);     // 外接红灯：0→255（越来越亮）
-    delay(10);
+    delay(5);
   }
   
   Serial.println("Breathing cycle completed");
