@@ -13,10 +13,10 @@ void loop() {
   digitalWrite(LED_PIN, HIGH);
   digitalWrite(LED_PIN_R, HIGH);  // 点亮LED
   Serial.println("LED ON");    // 串口输出提示
-  delay(1000);                 // 保持1秒（1000毫秒）
+  delay(2000);                 // 保持1秒（1000毫秒）
   
   digitalWrite(LED_PIN, LOW);
   digitalWrite(LED_PIN_R, LOW);   // 熄灭LED
   Serial.println("LED OFF");   // 串口输出提示
-  delay(1000);                 // 保持1秒
+  delay(2000);                 // 保持1秒
 }
