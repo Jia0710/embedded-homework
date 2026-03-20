@@ -4,7 +4,7 @@
 // 用于记录时间的变量
 unsigned long previousMillis = 0;
 // 闪烁间隔 500ms（1秒亮、1秒灭 = 1Hz）
-const long interval = 500;
+const long interval = 700;
 
 // 记录LED当前状态
 int ledState = LOW;
