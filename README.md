@@ -17,3 +17,4 @@ cd ex01
 g++ hello.c.cpp -o hello
 # 运行程序
 ./hello
+3.26课程打卡
